@@ -30,7 +30,7 @@
       if(meat > realisticweight){
         total += ((meat-realisticweight)*2); //2 pt for every pound above realistic
       }
-      total += Math.round((parseFloat(document.getElementById("distance").value)/.25)); //1 pt for every .25 miles of drag
+      total += Math.floor((parseFloat(document.getElementById("distance").value)/.25)); //1 pt for every .25 miles of drag
       total += parseFloat(document.querySelector('input[name="kids"]:checked').value); //10 bonus points for public
     
       document.getElementById("score").innerHTML = "Total Score: " + total.toFixed(2);
