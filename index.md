@@ -1,7 +1,5 @@
-<!DOCTYPE html>
 <html><head>
-
-<title>Huntavore Deer Scoring System</title>
+<title>Huntavore Deers Scoring System</title>
 
 <meta name="GENERATOR" content="Internet Assistant for Microsoft Word 2.0z Beta">
 </head>
