@@ -105,5 +105,3 @@ Total Score: 0
 <p id="realisticweight">
 </p>
 
-</form>
-</body></html>
