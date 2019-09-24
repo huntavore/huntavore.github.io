@@ -7,7 +7,6 @@
 <body>
 <h1><center>Huntavore Deer Scoring System</center></h1>
 <h4><center>What did your deer really score?</center></h4>
-</center></h4>
 
 <form method="post">
 
@@ -82,7 +81,4 @@ Total Score: 0
 </p>
 
 </form>
-
-
-
 </body></html>
