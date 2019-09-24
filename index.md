@@ -34,11 +34,11 @@
       total += parseFloat(document.querySelector('input[name="kids"]:checked').value); //10 bonus points for public
     
       document.getElementById("score").innerHTML = "Total Score: " + total.toFixed(2);
-      document.getElementById("dressedweight").innerHTML = "Field Dressed Weight: " + weight.toFixed(2);
-      document.getElementById("totalweight").innerHTML = "Live Weight: " + totalweight.toFixed(2);
-      document.getElementById("carcassweight").innerHTML = "Carcass Weight: " + carcassweight.toFixed(2);
-      document.getElementById("idealweight").innerHTML = "Ideal Meat Recovery Weight: " + idealweight.toFixed(2);
-      document.getElementById("realisticweight").innerHTML = "Realistic Meat Recovery Weight: " + realisticweight.toFixed(2);
+      document.getElementById("dressedweight").innerHTML = "   Field Dressed Weight: " + weight.toFixed(2);
+      document.getElementById("totalweight").innerHTML = "   Live Weight: " + totalweight.toFixed(2);
+      document.getElementById("carcassweight").innerHTML = "   Carcass Weight: " + carcassweight.toFixed(2);
+      document.getElementById("idealweight").innerHTML = "   Ideal Meat Recovery Weight: " + idealweight.toFixed(2);
+      document.getElementById("realisticweight").innerHTML = "   Realistic Meat Recovery Weight: " + realisticweight.toFixed(2);
     }
 </script>
 
@@ -113,7 +113,7 @@ Total Score: 0
 
 <br><br><br><br><br><br><br>
 <p>
-<font size="4">Created By: PLW</font>
+<small>Created By: PLW</small>
 </p>
 
 
