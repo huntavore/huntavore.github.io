@@ -36,8 +36,8 @@
       document.getElementById("dressedweight").innerHTML = "Field Dressed Weight: " + weight;
       document.getElementById("totalweight").innerHTML = "Live Weight: " + totalweight;
       document.getElementById("carcassweight").innerHTML = "Carcass Weight: " + carcassweight;
-      document.getElementById("idealweight").innerHTML = "Ideal Weight: " + idealweight;
-      document.getElementById("realisticweight").innerHTML = "Realistic Weight: " + realisticweight;
+      document.getElementById("idealweight").innerHTML = "Ideal Meat Recovery Weight: " + idealweight;
+      document.getElementById("realisticweight").innerHTML = "Realistic Meat Recovery Weight: " + realisticweight;
     }
 </script>
 
