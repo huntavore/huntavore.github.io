@@ -22,13 +22,22 @@
       if(weight > 100){
         total += (weight-100); //1 pt for every pound above 100
       }
-      var usable = ((parseInt(document.getElementById("weight").value) /1.331)*.67*.7);
+      var totalweight = (parseInt(document.getElementById("weight").value) * 1.26);
+      var carcassweight = (parseInt(document.getElementById("weight").value) /1.331);
+      var idealweight = carcassweight * .67;
+      var realisticweight = idealweight * .7;
       var meat = parseInt(document.getElementById("meat").value);
-      if(meat > usable){
-        total += ((meat-usable)*2); //2 pt for every pound above realistic
+      if(meat > realisticweight){
+        total += ((meat-realisticweight)*2); //2 pt for every pound above realistic
       }
       total += (parseInt(document.getElementById("distance").value)/.25); //1 pt for every .25 miles of drag
+      total += parseInt(document.querySelector('input[name="kids"]:checked').value); //10 bonus points for public
       document.getElementById("score").innerHTML = "Total Score: " + total;
+      document.getElementById("dressedweight").innerHTML = "Field Dressed Weight: " + weight;
+      document.getElementById("totalweight").innerHTML = "Live Weight: " + totalweight;
+      document.getElementById("carcassweight").innerHTML = "Carcass Weight: " + carcassweight;
+      document.getElementById("idealweight").innerHTML = "Ideal Weight: " + idealweight;
+      document.getElementById("realisticweight").innerHTML = "Realistic Weight: " + realisticweight;
     }
 </script>
 
@@ -71,6 +80,11 @@ How many pounds of butchered meat did you end up with after butchering?
 </p>
 
 <p>
+Did you bring kids or a non-hunter on the recovery with you? <input type="RADIO" name="kids" value="10" checked>Yes 
+                                                             <input type="RADIO" name="kids" value="0">No
+</p>
+
+<p>
 How far was the drag out? Only count non-motorized recovery distance and be accurate down to the quarter mile. 
 <input type="number" id="distance" step="0.01" value="0" required>
 </p>
@@ -78,6 +92,17 @@ How far was the drag out? Only count non-motorized recovery distance and be accu
 
 <p id="score">
 Total Score: 0 
+</p>
+
+<p id="dressedweight">
+</p>
+<p id="totalweight">
+</p>
+<p id="carcassweight">
+</p>
+<p id="idealweight">
+</p>
+<p id="realisticweight">
 </p>
 
 </form>
