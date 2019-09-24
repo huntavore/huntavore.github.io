@@ -13,31 +13,32 @@
 <script type="text/javascript">
     function myFunction() { 
       var total = 0;
-      total += parseInt(document.querySelector('input[name="recovered"]:checked').value); //50 points for recovered deer
-      total += parseInt(document.querySelector('input[name="public"]:checked').value); //15 bonus points for public
-      total += parseInt(document.getElementById("points").value); //1 pt for each ring
-      total += (parseInt(document.getElementById("stickers").value) * 5); //5 bonus points for each sticker
-      total += (parseInt(document.getElementById("organs").value) * 5); //5 pts for each organ
-      var weight = parseInt(document.getElementById("weight").value);
+      total += parseFloat(document.querySelector('input[name="recovered"]:checked').value); //50 points for recovered deer
+      total += parseFloat(document.querySelector('input[name="public"]:checked').value); //15 bonus points for public
+      total += parseFloat(document.getElementById("points").value); //1 pt for each ring
+      total += (parseFloat(document.getElementById("stickers").value) * 5); //5 bonus points for each sticker
+      total += (parseFloat(document.getElementById("organs").value) * 5); //5 pts for each organ
+      var weight = parseFloat(document.getElementById("weight").value);
       if(weight > 100){
         total += (weight-100); //1 pt for every pound above 100
       }
-      var totalweight = (parseInt(document.getElementById("weight").value) * 1.26);
-      var carcassweight = (parseInt(document.getElementById("weight").value) /1.331);
+      var totalweight = (parseFloat(document.getElementById("weight").value) * 1.26);
+      var carcassweight = (parseFloat(document.getElementById("weight").value) /1.331);
       var idealweight = carcassweight * .67;
       var realisticweight = idealweight * .7;
-      var meat = parseInt(document.getElementById("meat").value);
+      var meat = parseFloat(document.getElementById("meat").value);
       if(meat > realisticweight){
         total += ((meat-realisticweight)*2); //2 pt for every pound above realistic
       }
-      total += (parseInt(document.getElementById("distance").value)/.25); //1 pt for every .25 miles of drag
-      total += parseInt(document.querySelector('input[name="kids"]:checked').value); //10 bonus points for public
-      document.getElementById("score").innerHTML = "Total Score: " + total;
-      document.getElementById("dressedweight").innerHTML = "Field Dressed Weight: " + weight;
-      document.getElementById("totalweight").innerHTML = "Live Weight: " + totalweight;
-      document.getElementById("carcassweight").innerHTML = "Carcass Weight: " + carcassweight;
-      document.getElementById("idealweight").innerHTML = "Ideal Meat Recovery Weight: " + idealweight;
-      document.getElementById("realisticweight").innerHTML = "Realistic Meat Recovery Weight: " + realisticweight;
+      total += (parseFloat(document.getElementById("distance").value)/.25); //1 pt for every .25 miles of drag
+      total += parseFloat(document.querySelector('input[name="kids"]:checked').value); //10 bonus points for public
+    
+      document.getElementById("score").innerHTML = "Total Score: " + total.toFixed(2);
+      document.getElementById("dressedweight").innerHTML = "Field Dressed Weight: " + weight.toFixed(2);
+      document.getElementById("totalweight").innerHTML = "Live Weight: " + totalweight.toFixed(2);
+      document.getElementById("carcassweight").innerHTML = "Carcass Weight: " + carcassweight.toFixed(2);
+      document.getElementById("idealweight").innerHTML = "Ideal Meat Recovery Weight: " + idealweight.toFixed(2);
+      document.getElementById("realisticweight").innerHTML = "Realistic Meat Recovery Weight: " + realisticweight.toFixed(2);
     }
 </script>
 
@@ -50,8 +51,8 @@ Was the deer recovered? <input type="RADIO" name="recovered" value="50" checked>
 </p>
 
 <p>
-Was the deer recovered on public land? <input type="RADIO" name="public" value="15" checked>Yes 
-                                       <input type="RADIO" name="public" value="0">No
+Was the deer recovered on public land? <input type="RADIO" name="public" value="15">Yes 
+                                       <input type="RADIO" name="public" value="0" checked>No
 </p>
 
 <p>
@@ -80,8 +81,8 @@ How many pounds of butchered meat did you end up with after butchering?
 </p>
 
 <p>
-Did you bring kids or a non-hunter on the recovery with you? <input type="RADIO" name="kids" value="10" checked>Yes 
-                                                             <input type="RADIO" name="kids" value="0">No
+Did you bring kids or a non-hunter on the recovery with you? <input type="RADIO" name="kids" value="10">Yes 
+                                                             <input type="RADIO" name="kids" value="0" checked>No
 </p>
 
 <p>
