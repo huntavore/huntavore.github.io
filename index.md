@@ -106,14 +106,5 @@ Total Score: 0
 <p id="realisticweight">
 </p>
 
-
-
-
-
-
-<br><br><br><br><br><br><br>
-<p>
-<small>Created By: PLW</small>
-</p>
-
-
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<p><small>Created By: PLW</small></p>
