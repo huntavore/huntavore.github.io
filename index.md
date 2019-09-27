@@ -86,7 +86,7 @@ Did you bring kids or a non-hunter on the recovery with you? <input type="RADIO"
 </p>
 
 <p>
-How far was the drag out? Only count non-motorized recovery distance and be accurate down to the quarter mile. 
+How far was the drag out in miles? Only count non-motorized recovery distance and be accurate down to the quarter mile. 
 <input type="number" id="distance" step="0.01" value="0" required>
 </p>
 <button type="button" onclick="myFunction()">What's my score?</button>
