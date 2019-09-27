@@ -43,7 +43,7 @@
 </script>
 
 <p>
-The purpose of the Huntavore Scoring System is to focus on the hunt rather than just the antlers. 
+<h4>The purpose of the Huntavore Scoring System is to focus on the hunt rather than just the antlers.</h4> 
 
 <p>
 Was the deer recovered? <input type="RADIO" name="recovered" value="50" checked>Yes 
