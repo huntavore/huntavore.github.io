@@ -71,7 +71,7 @@ How many organs did you recover for consumption?
 </p>
 
 <p>
-How much did your deer weigh field dressed? Hanging carcass weight.
+How much did your deer weigh field dressed?
 <input type="number" id="weight" value="0" required>
 </p>
 
