@@ -43,7 +43,7 @@
 </script>
 
 <p>
-The purpose of the Huntavore scoring system is to focus on the hunt rather on just the antlers. 
+The purpose of the Huntavore Scoring System is to focus on the hunt rather than just the antlers. 
 
 <p>
 Was the deer recovered? <input type="RADIO" name="recovered" value="50" checked>Yes 
@@ -56,7 +56,7 @@ Was the deer recovered on public land? <input type="RADIO" name="public" value="
 </p>
 
 <p>
-If it was a buck, how many points did it have? To count the point has to hold  a ring. 
+If it was a buck, how many points did it have? To count, the point has to hold  a ring. 
 <input type="number" id="points" value="0" required>
 </p>
 
